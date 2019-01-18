@@ -14,6 +14,6 @@ This would be a paragraph-y thingy.
 
 Another paragraph-y thing-y.
 
-![](https://s3.amazonaws.com/matador-credentials/og_images/unfurl.png)
+![](/media/10.Georgia.jpg)
 
-There's an image for annnnnddrreeewwww... Vom
+Here's a cool truck.
