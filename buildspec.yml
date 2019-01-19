@@ -22,7 +22,7 @@ phases:
 
 artifacts:
   files:
-    - hugoblog/public
+    - hugoblog/public/**/*
   # post_build:
   #   commands:
   #     - aws s3 sync --delete public s3://bquinn-hugoblog --cache-control max-age=3600
