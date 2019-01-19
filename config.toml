@@ -1,4 +1,4 @@
-baseURL = "http://bquinn-hugoblog.s3-website-us-east-1.amazonaws.com/"
+baseURL = "http://d1e5otyx6e7a88.cloudfront.net/"
 languageCode = "en-us"
 title = "Ben Quinn's Blog"
 theme = "pickles"
