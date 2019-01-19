@@ -16,7 +16,7 @@ sections:
   label: Pages
   create: all
   match: "*"
-upload_dir: media
+upload_dir: ''
 public_path: https://s3.amazonaws.com/bquinn-hugoblog-media
 front_matter_path: ''
 use_front_matter_path: 
