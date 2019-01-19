@@ -19,10 +19,8 @@ phases:
   build:
     commands:
       - (cd hugoblog && hugo)
+      - aws s3 sync --delete hugoblog/public s3://bquinn-hugoblog --cache-control max-age=3600
 
-artifacts:
-  files:
-    - hugoblog/public/**/*
-  # post_build:
-  #   commands:
-  #     - aws s3 sync --delete public s3://bquinn-hugoblog --cache-control max-age=3600
+# artifacts:
+#   files:
+#     - hugoblog/public/**/*
