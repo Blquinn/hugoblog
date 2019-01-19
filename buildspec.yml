@@ -18,7 +18,7 @@ phases:
       - rm -rf /tmp/hugo*
   build:
     commands:
-      - cd hugoblog && hugo
+      - (cd hugoblog && hugo)
 
 artifacts:
   files:
