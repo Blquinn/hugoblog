@@ -14,7 +14,7 @@ This would be a paragraph-y thingy.
 
 Another paragraph-y thing-y.
 
-![](http://bquinn-hugoblog.s3-website-us-east-1.amazonaws.com/media/ooC0lQq.jpg)
+![](https://s3.amazonaws.com/bquinn-hugoblog-media/ooC0lQq.jpg)
 
 Here's a cool truck.
 
