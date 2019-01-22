@@ -19,4 +19,4 @@ phases:
   build:
     commands:
       - (cd hugoblog && hugo)
-      - aws s3 sync --delete hugoblog/public s3://bquinn-hugoblog --cache-control max-age=3600
+      - aws s3 sync hugoblog/public s3://bquinn-hugoblog --cache-control max-age=3600
