@@ -16,8 +16,6 @@ Another paragraph-y thing-y.
 
 ![](/media/ooC0lQq.jpg)
 
-Here's a cool truck.
-
 Some really cool code:
 
     print("Hello world")
