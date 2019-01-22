@@ -7,6 +7,6 @@ draft: true
 
 # This is my second post
 
-Here is some content on my sencond post.
+Here is some content on my second post.
 
 # WOW, now that's what I call a post!
