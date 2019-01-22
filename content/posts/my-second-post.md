@@ -1,0 +1,12 @@
+---
+title: "My Second Post"
+date: 2019-01-22T16:47:53-05:00
+thumbnail: "path/thumbnail.jpg"
+draft: true
+---
+
+# This is my second post
+
+Here is some content on my sencond post.
+
+# WOW, now that's what I call a post!
