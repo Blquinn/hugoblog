@@ -6,13 +6,8 @@ tags = []
 title = "My First Post"
 
 +++
-# This would be a title-y thingy
 
-## Smaller header
-
-This would be a paragraph-y thingy.
-
-Another paragraph-y thing-y.
+# My first post
 
 ![](/media/ooC0lQq.jpg)
 
