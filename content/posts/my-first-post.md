@@ -6,10 +6,9 @@ tags = []
 title = "My First Post"
 
 +++
-
 # My first post
 
-![](/media/ooC0lQq.jpg)
+![](/static/ooC0lQq.jpg)
 
 Some really cool code:
 
