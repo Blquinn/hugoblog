@@ -2,3 +2,11 @@ baseURL = "https://blq.me/"
 languageCode = "en-us"
 title = "Ben Quinn's Blog"
 theme = "pickles"
+
+[deployment]
+[[deployment.targets]]
+name = "aws"
+URL = "s3://bquinn-hugoblog?region=us-east-1"
+cloudFrontDistributionID = "ECH433SQB2WMU"
+cacheControl = "max-age=3600, no-transform, public"
+gzip = true
