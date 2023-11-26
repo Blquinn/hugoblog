@@ -12,7 +12,7 @@ tags:
 
 I've spent a lot of time weighing options of different technologies to build my blog with. These days there are so many options it can get pretty overwhelming. You have hundreds of different languages, frameworks and hosting providers and trying to choose the *best* one is pretty much impossible.
 
-I've basically stumbled upon a few different technologies which satisfy my needs / wants for my blog setup.
+I've stumbled upon a few different technologies which satisfy my needs and wants for my blogging setup.
 
 The source code for this blog is available on [my github](https://github.com/Blquinn/hugoblog).
 
@@ -40,9 +40,17 @@ Hugo outputs a bunch of static, rendered html files, css and javascript files (I
 
 ## How It's Done
 
-1. Create hugo site [https://gohugo.io/getting-started/quick-start/](https://gohugo.io/getting-started/quick-start/)
-2. Setup tina `npx @tinacms/cli@latest init`
-3. Add dev script to `packages.json`
+#### Create Hugo Site
+
+Follow the steps on [Hugo's Quick Start guide](https://gohugo.io/getting-started/quick-start/) to set up your Hugo site.
+
+#### Setup TinaCMS
+
+Initialize TinaCMS using the command npx @tinacms/cli\@latest init.
+
+#### Add Dev Script
+
+Update your package.json to include a development script for TinaCMS:
 
 ```json
 {
@@ -52,7 +60,7 @@ Hugo outputs a bunch of static, rendered html files, css and javascript files (I
 }
 ```
 
-##### Configuring Tina
+#### Configuring Tina
 
 We need to configure Tina to work together with hugo, let's see how to do that.
 
@@ -128,10 +136,12 @@ beforeSubmit: async ({
 
 The fields lastmod and date are hugo frontmatter fields for the last modified time and the creation date respectively.
 
-#### All done
+#### Wrapping Up
 
 After everything is done the tina admin console looks like this:
 
 ![Tina admin console screenshot](/tina-admin-console-screenshot.png "Tina admin console screenshot")
 
 Here's a better shot of the rich text editor:![Screenshot of the rich text editor](/tina-admin-console-screenshot-2.png "Here's a better shot of the rich text editor")
+
+This combination of Hugo and Tina has made it really nice to author blog posts, not to mention it's all free. It could just be the motivation that I need to actually start writing some posts.
