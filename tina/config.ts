@@ -8,6 +8,10 @@ const branch =
   process.env.HEAD ||
   "main";
 
+function dateToDateString(date: Date): string {
+  return date.toISOString().substring(0, 10)
+}
+
 export default defineConfig({
   branch,
 
@@ -53,17 +57,24 @@ export default defineConfig({
           }) => {
             let vals: Record<string, any> = {
               ...values,
-              lastmod: new Date().toISOString(),
+              lastmod: dateToDateString(new Date())
             }
 
             if (form.crudType == 'create') {
-              vals.date = new Date().toISOString()
+              vals.date = dateToDateString(new Date())
             }
 
             return vals
           },
         },
         fields: [
+          {
+            name: "draft",
+            type: "boolean",
+            label: "In Draft",
+            description: "Disabling 'In Draft' publishes the post.",
+            required: true,
+          },
           {
             name: "title",
             type: "string",
@@ -95,13 +106,6 @@ export default defineConfig({
             type: "datetime",
             label: "Last Modification Date",
             description: "The datetime at which the content was last modified.",
-          },
-          {
-            name: "draft",
-            type: "boolean",
-            label: "In Draft",
-            description: "Disabling 'In Draft' publishes the post.",
-            required: true,
           },
           {
             name: "tags",
