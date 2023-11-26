@@ -1,0 +1,22 @@
+{
+  "name": "hugoblog",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "tinacms dev -c \"hugo server -D\"",
+    "build": "hugo",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "slugify": "^1.6.6",
+    "tinacms": "^1.5.26"
+  },
+  "devDependencies": {
+    "@tinacms/cli": "^1.5.36",
+    "@types/node": "^20.10.0"
+  }
+}

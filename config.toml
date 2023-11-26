@@ -1,6 +1,6 @@
 baseURL = "https://blq.me/"
 languageCode = "en-us"
-title = "Ben Quinn's Blog"
+title = "braindamage"
 theme = "pickles"
 
 [deployment]
