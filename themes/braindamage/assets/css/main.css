@@ -1,0 +1,177 @@
+:root {
+  --font-color: #222;
+  --background-color: #eee;
+}
+
+body {
+  background-color: var(--background-color);
+  color: var(--font-color);
+  font-family: sans-serif;
+  line-height: 1.5;
+  margin: 1rem;
+  max-width: 50rem; 
+  margin: auto;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+/* Header */
+
+header {
+  margin-bottom: 1rem;
+}
+
+header>h1 {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+header>h1>a {
+  color: var(--font-color) !important;
+  text-decoration: none;
+}
+
+header>h1>a:hover {
+  text-decoration: underline;
+}
+
+header > nav {
+  width: fit-content;
+  margin: auto;
+}
+
+header ul {
+  list-style: none;
+  display: inline;
+}
+
+header ul li {
+  display: inline;
+  padding-right: 0.25rem;
+}
+
+header ul li:not(:first-child)::before {
+  padding-right: 0.25rem;
+  content: "\25CF";
+  color: var(--font-color);
+}
+
+/* Footer */
+
+footer {
+  border-top: 1px solid var(--font-color);
+  margin-top: 1rem;
+}
+
+/* Links */
+
+a {
+  color: #0060df;
+  text-decoration: underline;
+}
+
+a:visited {
+  color: #6301ad;
+}
+
+/* Code */
+
+.highlight pre {
+  padding: 0.5rem 0.75rem 0.5rem 0.75rem;
+  border-radius: 4px;
+  overflow: auto;
+}
+
+:not(pre)>code {
+  background-color: var(--font-color);
+  padding: 0.125rem 0.25rem 0.125rem 0.25rem;
+  border-radius: 4px;
+  color: var(--background-color);
+}
+
+/* Typeography */
+
+h1 {
+  font-weight: bold;
+  font-size: 2.125rem;
+}
+
+h2 {
+  font-weight: bold;
+  font-size: 1.875rem;
+}
+
+h3 {
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+h4 {
+  font-weight: bold;
+  font-size: 1.25rem;
+}
+
+h5 {
+  font-weight: bold;
+  font-size: 1.125rem;
+}
+
+h6 {
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+/* Main */
+
+main {
+  margin-bottom: 2rem;
+}
+
+main .summary-text {
+  font-size: 0.95rem;
+}
+
+main img {
+  aspect-ratio: auto;
+  width: 100%;
+}
+
+main h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+main p {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+main .post-date {
+  font-style: italic;
+  font-size: 0.95rem;
+}
+
+footer {
+  margin-bottom: 1rem;
+}
+
+/* Terms */
+
+.terms ul {
+  list-style: none;
+  display: inline;
+}
+
+.terms ul li {
+  display: inline;
+}
+
+.terms ul li:not(:first-child)::before {
+  content: "| ";
+  color: var(--font-color);
+}

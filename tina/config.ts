@@ -40,6 +40,7 @@ export default defineConfig({
         defaultItem() {
           return {
             title: '',
+            author: 'Benjamin Quinn',
             draft: true,
           };
         },
@@ -88,6 +89,13 @@ export default defineConfig({
             label: "URL Slug",
             required: false,
             description: "This is the url's path. It will default to the title of the post. E.g. in /posts/my-post 'my-post' is the slug.",
+          },
+          {
+            name: "author",
+            type: "string",
+            label: "Author Name",
+            required: false,
+            description: "The author of the article.",
           },
           {
             name: "description",

@@ -1,0 +1,36 @@
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width" />
+{{ with .Title | default .Site.Title }}
+<title>{{ . }}</title>
+<meta property="og:title" content="{{ . }}" />
+{{ end }}
+
+{{ with .Description | default ($.Param "subtitle") }}
+<meta name="description" content="{{ . }}">
+<meta property="og:description" content="{{ . }}">
+{{ end }}
+
+<meta name="author" content="{{ $.Param "author" }}"/>
+<meta property="og:site_name" content="{{ .Site.Title }}" />
+<meta property="og:url" content="{{ .Permalink }}" />
+
+{{ with .Params.thumbnail }}
+<meta property="og:image" content="{{ . | absURL }}" />
+<meta name="twitter:image" content="{{ . | absURL }}" />
+{{ end }}
+
+{{ if .IsPage }}
+<meta property="og:type" content="article" />
+{{ else }}
+<meta property="og:type" content="website" />
+{{ end }}
+
+{{ partialCached "head/css.html" . }}
+{{- with ($.Param "favicon") }}
+<link rel='icon' type='image/x-icon' href="{{ . | absURL }}" />
+{{- end -}}
+{{ if eq .RelPermalink "/" }}
+{{ with .OutputFormats.Get "RSS" -}}
+<link href="{{ .Permalink }}" rel="alternate" type="application/rss+xml" title="{{ $.Site.Title }}" />
+{{ end -}}
+{{ end }}

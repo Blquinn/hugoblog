@@ -1,9 +1,10 @@
 ---
 draft: false
 title: How I Created This Website
+author: Benjamin Quinn
 description: This post explains what technologies and techniques I use to create my blog.
 date: 2023-11-26T20:02:06.940Z
-lastmod: 2023-11-26T00:00:00.000Z
+lastmod: 2023-11-27T00:00:00.000Z
 tags:
   - webdev
   - hugo
@@ -16,7 +17,7 @@ I've stumbled upon a few different technologies which satisfy my needs and wants
 
 The source code for this blog is available on [my github](https://github.com/Blquinn/hugoblog).
 
-### Hugo
+## Hugo
 
 [Hugo](https://gohugo.io/) is a static site generator, which essentially takes a bunch of markdown files and templates them to create your website. It sources your web pages from files that are committed to a git repository. It does a lot more than that, if you want to learn more about Hugo, just take a look at their site.
 
@@ -40,15 +41,17 @@ Hugo outputs a bunch of static, rendered html files, css and javascript files (I
 
 ## How It's Done
 
-#### Create Hugo Site
+These are the steps that I took to create the site.
+
+### 1. Create Hugo Site
 
 Follow the steps on [Hugo's Quick Start guide](https://gohugo.io/getting-started/quick-start/) to set up your Hugo site.
 
-#### Setup TinaCMS
+### 2. Setup TinaCMS
 
 Initialize TinaCMS using the command npx @tinacms/cli\@latest init.
 
-#### Add Dev Script
+### 3. Add Dev Script
 
 Update your package.json to include a development script for TinaCMS:
 
@@ -60,7 +63,7 @@ Update your package.json to include a development script for TinaCMS:
 }
 ```
 
-#### Configuring Tina
+### 4. Configure Tina
 
 We need to configure Tina to work together with hugo, let's see how to do that.
 
@@ -136,7 +139,7 @@ beforeSubmit: async ({
 
 The fields lastmod and date are hugo frontmatter fields for the last modified time and the creation date respectively.
 
-#### Wrapping Up
+## Wrapping Up
 
 After everything is done the tina admin console looks like this:
 

@@ -1,7 +1,11 @@
 baseURL = "https://blq.me/"
 languageCode = "en-us"
 title = "braindamage"
-theme = "pickles"
+theme = "braindamage"
+
+[markup]
+  [markup.highlight]
+  style = "swapoff"
 
 [deployment]
 [[deployment.targets]]
