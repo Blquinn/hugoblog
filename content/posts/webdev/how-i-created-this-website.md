@@ -5,8 +5,9 @@ author: Benjamin Quinn
 description: This post explains what technologies and techniques I use to create my blog.
 date: 2023-11-26T20:02:06.940Z
 lastmod: 2023-11-27T00:00:00.000Z
-tags:
+categories:
   - webdev
+tags:
   - hugo
   - tinacms
 ---

@@ -3,13 +3,28 @@
   --background-color: #eee;
 }
 
+@font-face {
+  font-family: 'NotoSans';
+  font-style: normal;
+  font-weight: 400;
+  src: local("NotoSans"), url("/fonts/NotoSans-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: 'NotoSansMono';
+  font-style: monospace;
+  font-weight: 400;
+  src: local("NotoSansMono"), url("/fonts/NotoSansMono-Regular.ttf") format("truetype");
+}
+
 body {
   background-color: var(--background-color);
   color: var(--font-color);
-  font-family: sans-serif;
+  font-family: NotoSans, sans-serif;
+  font-size: 12pt;
   line-height: 1.5;
   margin: 1rem;
-  max-width: 50rem; 
+  max-width: 50rem;
   margin: auto;
   padding-left: 1rem;
   padding-right: 1rem;
@@ -35,7 +50,7 @@ header>h1>a:hover {
   text-decoration: underline;
 }
 
-header > nav {
+header>nav {
   width: fit-content;
   margin: auto;
 }
@@ -87,6 +102,11 @@ a:visited {
   padding: 0.125rem 0.25rem 0.125rem 0.25rem;
   border-radius: 4px;
   color: var(--background-color);
+}
+
+code {
+  font-family: NotoSansMono, monospace;
+  font-size: 10pt;
 }
 
 /* Typeography */

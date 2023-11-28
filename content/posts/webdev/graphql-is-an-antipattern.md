@@ -3,10 +3,11 @@ draft: false
 title: GraphQL is an Anti-Pattern
 date: 2021-04-09T17:22:04.000Z
 lastmod: 2023-11-26T00:00:00.000Z
+categories:
+  - webdev
 tags:
   - microservices
   - graphql
-  - webdev
 ---
 
 We've been using graphql at work and I find it so tiresome that I was motivated to write a blog post about it!

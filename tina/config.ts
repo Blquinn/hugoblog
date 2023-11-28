@@ -116,6 +116,13 @@ export default defineConfig({
             description: "The datetime at which the content was last modified.",
           },
           {
+            name: "categories",
+            type: "string",
+            label: "Categories",
+            required: false,
+            list: true,
+          },
+          {
             name: "tags",
             type: "string",
             label: "Tags",

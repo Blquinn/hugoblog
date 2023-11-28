@@ -3,9 +3,24 @@ languageCode = "en-us"
 title = "braindamage"
 theme = "braindamage"
 
+
+[menu]
+[[menu.main]]
+  name = 'Home'
+  pageRef = '/'
+  weight = 10
+[[menu.main]]
+  name = 'Categories'
+  pageRef = '/categories'
+  weight = 20
+[[menu.main]]
+  name = 'Tags'
+  pageRef = '/tags'
+  weight = 30
+
 [markup]
-  [markup.highlight]
-  style = "swapoff"
+[markup.highlight]
+style = "swapoff"
 
 [deployment]
 [[deployment.targets]]
