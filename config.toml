@@ -3,7 +3,6 @@ languageCode = "en-us"
 title = "braindamage"
 theme = "braindamage"
 
-
 [menu]
 [[menu.main]]
   name = 'Home'

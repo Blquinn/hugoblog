@@ -50,7 +50,7 @@ Follow the steps on [Hugo's Quick Start guide](https://gohugo.io/getting-started
 
 ### 2. Setup TinaCMS
 
-Initialize TinaCMS using the command npx @tinacms/cli\@latest init.
+Initialize TinaCMS using the command `npx @tinacms/cli@latest init`.
 
 ### 3. Add Dev Script
 
@@ -146,6 +146,8 @@ After everything is done the tina admin console looks like this:
 
 ![Tina admin console screenshot](/tina-admin-console-screenshot.png "Tina admin console screenshot")
 
-Here's a better shot of the rich text editor:![Screenshot of the rich text editor](/tina-admin-console-screenshot-2.png "Here's a better shot of the rich text editor")
+Here's a better shot of the rich text editor:
+
+![Screenshot of the rich text editor](/tina-admin-console-screenshot-2.png "Here's a better shot of the rich text editor")
 
 This combination of Hugo and Tina has made it really nice to author blog posts, not to mention it's all free. It could just be the motivation that I need to actually start writing some posts.

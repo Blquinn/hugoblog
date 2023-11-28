@@ -171,6 +171,16 @@ main p {
   margin-bottom: 1rem;
 }
 
+main ul {
+  list-style: inside;
+  margin: 1rem;
+}
+
+main ol {
+  list-style: decimal inside;
+  margin: 1rem;
+}
+
 main .post-date {
   font-style: italic;
   font-size: 0.95rem;
@@ -185,6 +195,7 @@ footer {
 .terms ul {
   list-style: none;
   display: inline;
+  margin: 0;
 }
 
 .terms ul li {
