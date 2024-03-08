@@ -62,13 +62,14 @@ header ul {
 
 header ul li {
   display: inline;
-  padding-right: 0.25rem;
 }
 
-header ul li:not(:first-child)::before {
-  padding-right: 0.25rem;
-  content: "\25CF";
+header ul .bullet {
+  padding-left: .25em;
+  padding-right: .25em;
   color: var(--font-color);
+  font-size: 0.5em;
+  vertical-align: middle;
 }
 
 /* Footer */
